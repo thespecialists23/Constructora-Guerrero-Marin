@@ -1,0 +1,708 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none; 
+  
+
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+  .head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.invisible {
+	background:none;
+	clear:both;
+	float:none;
+	width:100%;
+	height:1px;
+	border:none;
+	margin:-1px 0;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+      /* al documento le puse 3 tipos de fuentes de una misma familia */
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  }
+ 
+
+  nav{
+    margin-top: 20px;
+    margin-left: 500px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+     }
+  
+     a:-webkit-any(link){
+     color: -webkit-link;
+     cursor: pointer;
+  text-decoration: underline;
+     }
+
+    .hola{
+    font-size: 25px;
+    }
+    
+    .titulomain{
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    
+    .subtitulomain{
+      font-size: 28px;
+      letter-spacing: 2px;
+      color:#364e66;
+    }
+    
+    .subsub{
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+
+    .UNO{
+      background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .backbutton{
+      height: 60px;
+      width: 60px;
+      position: fixed;
+     right: 2rem;
+     bottom: 2rem;
+     z-index: 1000;
+     border-radius: 20px;
+     cursor: pointer;
+     background:#dcdee0 ;
+     color: #364e66;
+
+    }
+   
+    .backbutton:hover{
+      background:#364e66 ;
+      color: #fff;
+    }
+
+    .servicios{
+  
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .contenedor-head {
+      /* aqui editamos como queramos todo lo que es el contenedor que es la maypria de la pagina */
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      /* para que lo que se salga del contenedor se oculte y no se vea feo */
+      margin: auto;
+      padding: 60px 0;
+      height: 80vh;
+      background-image: linear-gradient(to top, rgba(255, 241, 235, 0.553) 0%, rgba(171, 225, 250, 0.46) 100%), url(../imagenes/arch.avif);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+       /* el fondo en rgb con trasnparencia de 50% */
+      }
+    
+      header{
+        display: block;
+         }
+    
+         .nav-enlace{
+            margin: 10px 0px 0px 20px;
+            display: inline-block;
+            background: #111;
+            color: floralwhite;
+            padding: 10px 30px;
+            letter-spacing: 1px;
+            border-radius: 15px;
+            }
+            
+            .nav-enlace:hover{
+            color:  rgb(211, 132, 21);
+            }  
+
+ .servicios{
+display: flex;
+justify-content: space-evenly;
+ }
+
+ 
+ 
+
+   .serv-contenedor {
+    /* aqui editamos como queramos todo lo que es el contenedor que es la maypria de la pagina */
+    width: px;
+    max-width:100%;
+    overflow: hidden;
+    /* para que lo que se salga del contenedor se oculte y no se vea feo */
+    margin: auto;
+    padding: 60px 0;
+    height: 630px;
+    background-image: linear-gradient(to top, rgba(255, 241, 235, 0.553) 0%, rgba(171, 225, 250, 0.46) 100%), url(../imagenes/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   
+    /* el fondo en rgb con trasnparencia de 50% */
+}
+   .parrafo {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+  }
+  
+   p{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .projects {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+        
+  .projects .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);/* como la caja , el contenedor que incluye todo y tiene la animacion */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .projects .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;/* se organizan los items del contenedor */
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  
+  
+.projects .card:hover .content {
+	transform: translateY(-20px); 
+}/* la transicion */
+
+.projects .card .content .imgBx {
+	position: relative;
+	width: 215px;  /* la imagen que esta dentro del contenedor */
+	height: 150px;
+	overflow: hidden;
+}
+
+.projects .card .content .imgBx img {
+	
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	object-fit: cover;
+}
+
+.projects .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px; /* titulo del contenedor */
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.projects .card .content .contentBx h3 span {
+	font-size: 12px;  
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.projects .card .sci {
+	position: absolute;
+	bottom: 35px;
+	display: flex;
+}
+/* el parrafo del contenedor */
+.projects .card .sci li {
+	list-style: none;
+	margin: 5 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.projects .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+.subtitulo1{
+  font-size: 30px;
+  
+  
+    }
+    
+  .Subtitulo{
+    font-size: 40px;
+  }
+
+  /* ////////////////////////////////////////// */
+  
+.cont-proyectos{
+  width: px;
+  max-width:100%;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+  height: 1350px;
+  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.553) 0%, rgba(171, 225, 250, 0.46) 100%),
+   url(../imagenes/fondooooooooooooo.jpg);
+
+}
+
+/* /////////////////////////////////PORTAL DE LA ITALIA////////////////////////////////////////////////////// */
+  .portaldelaitalia{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  
+  .cont-projects {
+    position : relative;
+    width : 1100px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding : 30px;  
+    
+  }
+  
+  .cont-projects .card2{
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : #fff;
+    margin : 30px 10px;
+    padding : 30px 60px;
+    /* CONTENEDOR DE ABAJO */
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0px 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 30px;
+  }
+  
+  .cont-projects .card2 .imgproject {
+    position : relative;
+    width : 260px; /* acomodar la imagen del logo del proyecto */
+    height : 260px;
+    top : -40%;
+    left: 30px;
+   box-shadow : 10px 2px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+    border-radius: 20px;
+  }
+  
+  .cont-projects .card2 .imgproject img {
+    max-width : 100%;
+    border-radius : 20px;
+  }
+  
+  .cont-projects .card2 .content1{
+    position : relative;
+    top : -210px;
+    left: -100px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    visibility : visible;
+  }
+  
+  .cont-projects .card2:hover .content1 {
+    margin-top : 0px;
+    visibility : visible;
+    opacity : 1;
+  }
+
+  .linkxd{
+    cursor: pointer;
+  }
+
+  .card2:hover{
+    scale: 1.2;
+  }
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////hotel xilon */
+.hotelxilon{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+
+.cont-projects_1 {
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px;  
+  
+}
+
+.cont-projects_1 .card_3{
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 30px 60px;
+  /* CONTENEDOR DE ABAJO */
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0px 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 30px;
+}
+
+.cont-projects_1 .card_3 .imgproject_2 {
+  position : relative;
+  width : 260px; /* acomodar la imagen del logo del proyecto */
+  height : 260px;
+  top : -40%;
+  left: 30px;
+ box-shadow : 10px 2px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+  border-radius: 20px;
+}
+
+.cont-projects_1 .card_3 .imgproject_2 img {
+  max-width : 100%;
+  border-radius : 20px;
+}
+
+.cont-projects_1 .card_3 .content_2{
+  position : relative;
+  top : -210px;
+  left: -100px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : visible;
+}
+
+.cont-projects_1 .card_3:hover .content_2 {
+  margin-top : 0px;
+  visibility : visible;
+  opacity : 1;
+}
+
+.card_3:hover{
+  scale: 1.2;
+}
+
+  /* /////////////////////////////////////////////// */
+
+/* //////////////////////////////LA PRADERA/////////////////////// */
+.lapradera{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+
+.cont-projects_2 {
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px;  
+  
+}
+
+.cont-projects_2 .card_4{
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 30px 60px;
+  /* CONTENEDOR DE ABAJO */
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0px 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 30px;
+}
+
+.cont-projects_2 .card_4 .imgproject_3 {
+  position : relative;
+  width : 260px; /* acomodar la imagen del logo del proyecto */
+  height : 260px;
+  top : -40%;
+  left: 30px;
+ box-shadow : 10px 2px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+  border-radius: 20px;
+}
+
+.cont-projects_2 .card_4 .imgproject_3 img {
+  max-width : 100%;
+  border-radius : 20px;
+}
+
+.cont-projects_2 .card_4 .content_3{
+  position : relative;
+  top : -210px;
+  left: -100px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : visible;
+}
+
+.cont-projects_2 .card_4:hover .content_3 {
+  margin-top : 0px;
+  visibility : visible;
+  opacity : 1;
+}
+/* ////////////////////////////////////////////////////////////////// */
+  .contenedorimg{
+    display: flex;/* el contenedor que incluye las 9 imagenes */
+    width: 1700px;/* ancho y alto del contenedor */
+    height: 350px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .img-proyectos{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    }
+    /* acomodamos las imagenes y el efecto de cambio */
+    .img-proyectos:hover{
+    cursor: default;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    }
+  
+    /* ////////////////////////////////////////////////////// */
+
+    .card_4:hover{
+      scale: 1.2;
+    }
+  
+    /* ////////////////////////////////////////////////////// */
+    .gallery{
+      background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+      width: 100%;
+    }
+    /* /////////////////////////////////////////////////// */
+
+    
+  .brand{
+    font-size: 40px;
+  }
+  .parrafoxd{
+    font-size: 20px;
+  }
+
+  .spacio1{
+    width: 100%;
+  }
+
+    #contact{
+   width: 100%;
+   height: 100%;
+   background-color: #000000f2;
+    }
+
+  
+    .footer2{
+      background:#5e7498a8 ;
+    }
+
+    .copyfooter{
+      background: #000000;
+    }
+
+
+    .section-header{
+      text-align: center;
+      margin: 0 auto;
+      padding: 40px 0;
+      font: 300 60px 'Oswald', sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+
+    .contact-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+      max-width: 840px;
+    }
+
+    .form-horizontal {
+      font-family: 'Lato';
+      font-weight:400;
+
+    }
+
+    .form-control, 
+    textarea {
+      width: 450px;
+      background-color: #ccc8c8;
+      color: #000000;
+      letter-spacing: 1px;
+      margin-left: 100px;
+    }
+
+.form-control{
+ padding: 10px;
+
+}
+
+.space2 {
+background: #5e7498a8;
+border-color: #5e7498a8;
+
+}
+
+.send-button {
+  position: absolute;
+  right: 10%;
+  bottom: 45%;
+  height: 60px;
+  width: 70px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.send-button:hover{
+  background-color: #a8edea;
+}
+
+.mapa_1{
+  width: 350px;
+  height: 300px;
+  margin-right: 500px;
+  margin-bottom: 1px;
+}
+  
+.direct-contact-container {
+  max-width: 400px;
+}
+.contact-list {
+  list-style-type: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #f3f2f2;
+}
+
+.contact-text {
+  font: 600 18px 'Lato', sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.phone {
+  margin-left: 5px;
+ 
+}
+
+.gmail {
+  margin-left: 5px;
+  letter-spacing: 2px;
+  
+}
+
+.place {
+  margin-left: 6px;
+}
+
+.contact-text a:hover {
+  color: #00a1bd;
+  text-decoration: underline
+}
+.social-media {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  font-weight: 550;
+  color: #ffffff;
+  letter-spacing: 1px;
+ padding: 20px;
+}
